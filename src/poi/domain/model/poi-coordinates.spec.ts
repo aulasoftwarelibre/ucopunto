@@ -7,8 +7,8 @@ describe("PoiCoordinates", () => {
     it("should return coordinates", () => {
         const coordinates = PointOfInterestCoordinates.FromArray([23.8, 67.7])
 
-        expect(coordinates.latitude).toBe(23.8);
-        expect(coordinates.longitude).toBe(67.7);
+        expect(coordinates.latitude.value).toBe(23.8);
+        expect(coordinates.longitude.value).toBe(67.7);
     });
 
 
