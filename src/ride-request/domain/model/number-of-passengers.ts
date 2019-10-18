@@ -1,7 +1,6 @@
 import { InvalidNumberOfPassengersException } from '../exceptions';
 import { ValueObject } from '../../../core/domain';
 
-
 interface Props {
   value: number;
 }
