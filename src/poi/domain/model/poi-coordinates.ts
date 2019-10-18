@@ -22,13 +22,13 @@ export class PointOfInterestCoordinates extends ValueObject<Props>{
         })
     }
 
-    get latitude(): number{
-        return this.props.latitude.value;
+    get latitude(): CoordinateLatitude{
+        return this.props.latitude;
     }
 
 
-    get longitude(): number{
-        return this.props.longitude.value;
+    get longitude(): CoordinateLongitude{
+        return this.props.longitude;
     }
 
 }
