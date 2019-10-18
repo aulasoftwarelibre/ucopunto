@@ -1,8 +1,8 @@
-import { Logger } from '@nestjs/common';
-import { NestFactory } from '@nestjs/core';
-import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import { Logger } from "@nestjs/common";
+import { NestFactory } from "@nestjs/core";
+import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 
-import { AppModule } from './app.module';
+import { AppModule } from "./app.module";
 
 export const PROJECT_NAME = 'Skeleton';
 export const PROJECT_VERSION = '0.1.0';
