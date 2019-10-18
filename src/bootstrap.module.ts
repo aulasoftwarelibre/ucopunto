@@ -1,9 +1,9 @@
-import { Module, OnModuleInit } from '@nestjs/common';
-import { CqrsModule, EventBus } from '@nestjs/cqrs';
-import { ConfigModule } from 'nestjs-config';
-import * as path from 'path';
+import { Module, OnModuleInit } from "@nestjs/common";
+import { CqrsModule, EventBus } from "@nestjs/cqrs";
+import { ConfigModule } from "nestjs-config";
+import * as path from "path";
 
-import { EventStore, EventStoreModule } from './core/eventstore';
+import { EventStore, EventStoreModule } from "./core/eventstore";
 
 @Module({
   imports: [
