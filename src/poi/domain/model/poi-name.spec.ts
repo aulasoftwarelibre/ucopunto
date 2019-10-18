@@ -1,4 +1,4 @@
-import { PointOfInterestName } from "./name";
+import { PointOfInterestName } from "./poi-name";
 
 describe('Poi Name', () => {
 
