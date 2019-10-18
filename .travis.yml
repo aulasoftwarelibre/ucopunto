@@ -9,4 +9,5 @@ cache:
 install:
   - yarn install
 script:
+  - yarn check-format
   - yarn test
