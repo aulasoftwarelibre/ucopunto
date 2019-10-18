@@ -3,9 +3,9 @@ import { PointOfInterestName } from "./poi-name";
 describe('Poi Name', () => {
 
   it('should be a string', () => {
-    const vo = PointOfInterestName.fromString("Hola Caracola");
+    const vo = PointOfInterestName.fromString("John Smith");
 
-    expect(vo.value).toBe("Hola Caracola");
+    expect(vo.value).toBe("John Smith");
   });
 
   it('should not be a empty string', () => {
