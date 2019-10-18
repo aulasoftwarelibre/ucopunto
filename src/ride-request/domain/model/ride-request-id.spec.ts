@@ -1,4 +1,4 @@
-import { RideRequestId } from "./ride-request-id";
+import { RideRequestId } from './ride-request-id';
 
 describe('RideRequestId', () => {
   const uuidA = '1061abe8-37e5-4623-8696-a9fd40797f73';
