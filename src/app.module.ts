@@ -1,6 +1,6 @@
-import { Global, Module } from "@nestjs/common";
+import { Global, Module } from '@nestjs/common';
 
-import { BootstrapModule } from "./bootstrap.module";
+import { BootstrapModule } from './bootstrap.module';
 
 @Global()
 @Module({

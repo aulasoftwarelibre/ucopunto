@@ -1,7 +1,7 @@
-import uuid = require("uuid");
-import { version } from "uuid-validate";
+import uuid = require('uuid');
+import { version } from 'uuid-validate';
 
-import { Id } from "../../../core/domain";
+import { Id } from '../../../core/domain';
 
 export class RideId extends Id {
   static generate(): RideId {
