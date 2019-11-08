@@ -10,7 +10,7 @@ export class NumberOfPassengers extends ValueObject<Props> {
     if (value < 1) {
       throw InvalidNumberOfPassengersException.withNumberOfPassengers(value);
     }
-    return new this({ value: value });
+    return new this({ value });
   }
 
   get value() {
