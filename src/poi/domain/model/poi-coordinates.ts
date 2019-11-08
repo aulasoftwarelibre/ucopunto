@@ -25,7 +25,10 @@ export class PointOfInterestCoordinates extends ValueObject<Props> {
   }
 
   equals(coordinates: PointOfInterestCoordinates): boolean {
-    if ((this.latitude.value == coordinates.latitude.value) && (this.longitude.value == coordinates.longitude.value)){
+    if (
+      this.latitude.value == coordinates.latitude.value &&
+      this.longitude.value == coordinates.longitude.value
+    ) {
       return true;
     }
     return false;
