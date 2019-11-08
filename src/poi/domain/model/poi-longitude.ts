@@ -6,7 +6,7 @@ interface Props {
 }
 
 export class CoordinateLongitude extends ValueObject<Props> {
-  public static FromNumber(longitude: number): CoordinateLongitude {
+  public static fromNumber(longitude: number): CoordinateLongitude {
     if (Math.abs(longitude) > 180) {
       throw LongitudeNotValidError.withLongitude(longitude);
     }
