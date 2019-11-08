@@ -9,17 +9,11 @@ interface Props {
 }
 
 export class PointOfInterestCoordinates extends ValueObject<Props> {
-  public static FromArray(
-    coordinates: Array<number>,
+  public static withLatitudeAndLongitude(
+    latitude: CoordinateLatitude,
+    longitude: CoordinateLongitude,
   ): PointOfInterestCoordinates {
-    if (coordinates.length !== 2) {
-      throw CoordinateNotValidError.withCoordinate(coordinates);
-    }
-
-    return new PointOfInterestCoordinates({
-      latitude: CoordinateLatitude.FromNumber(coordinates[0]),
-      longitude: CoordinateLongitude.FromNumber(coordinates[1]),
-    });
+    return new PointOfInterestCoordinates({ latitude, longitude });
   }
 
   get latitude(): CoordinateLatitude {
