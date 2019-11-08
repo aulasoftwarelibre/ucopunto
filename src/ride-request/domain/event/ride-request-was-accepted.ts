@@ -1,7 +1,5 @@
-import { DomainEvent } from "../../../core/domain";
+import { DomainEvent } from '../../../core/domain';
 
 export class RideRequestWasAccepted implements DomainEvent {
-    constructor(
-        public readonly id: string
-    ) {}
+  constructor(public readonly id: string) {}
 }
