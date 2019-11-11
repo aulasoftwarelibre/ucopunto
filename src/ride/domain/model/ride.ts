@@ -34,6 +34,10 @@ export class Ride extends AggregateRoot {
     return this._driverId;
   }
 
+  get rideRequestIds(): RideRequestId[] {
+    return this._rideRequestIds;
+  }
+
   addRideRequest(rideRequestId: RideRequestId) {
     this.apply(new RideWasAccepted(this.id.value, rideRequestId.value));
   }
