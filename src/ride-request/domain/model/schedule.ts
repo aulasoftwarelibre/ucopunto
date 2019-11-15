@@ -22,4 +22,14 @@ export class Schedule extends ValueObject<Props> {
   get waitingTimeInMinutes() {
     return this.props.waitingTimeInMinutes;
   }
+
+  public equals(schedule: Schedule): boolean {
+    if (!this.createdAt.equals(schedule.createdAt)) {
+      return false;
+    }
+    if (!this.waitingTimeInMinutes.equals(schedule.waitingTimeInMinutes)) {
+      return false;
+    }
+    return true;
+  }
 }
