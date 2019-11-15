@@ -23,4 +23,14 @@ export class PointOfInterestCoordinates extends ValueObject<Props> {
   get longitude(): CoordinateLongitude {
     return this.props.longitude;
   }
+
+  equals(coordinates: PointOfInterestCoordinates): boolean {
+    if (
+      this.latitude.value == coordinates.latitude.value &&
+      this.longitude.value == coordinates.longitude.value
+    ) {
+      return true;
+    }
+    return false;
+  }
 }
