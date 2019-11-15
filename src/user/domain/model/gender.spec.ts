@@ -39,6 +39,8 @@ describe('Gender', () => {
   });
 
   it('can not create an invalid gender', () => {
-    expect(() => Gender.fromString('yy')).toThrow(GenderNotValidError);
+    expect(() => Gender.fromString('yy')).toThrowError(
+      GenderNotValidError.withGender('yy'),
+    );
   });
 });
