@@ -28,4 +28,30 @@ export class Path extends ValueObject<Props> {
   get numberOfPassengers(): NumberOfPassengers {
     return this.props.numberOfPassengers;
   }
+
+  private arrivalsAreEqual(path: Path) {
+    return (
+      this.arrivals.every(x => {
+        return path.arrivals.find(y => x.equals(y)) !== undefined;
+      }) &&
+      path.arrivals.every(x => {
+        return this.arrivals.find(y => x.equals(y)) !== undefined;
+      })
+    );
+  }
+
+  public equals(path: Path): boolean {
+    if (!this.origin.equals(path.origin)) {
+      return false;
+    }
+
+    if (!this.arrivalsAreEqual(path)) {
+      return false;
+    }
+
+    if (!this.numberOfPassengers.equals(path.numberOfPassengers)) {
+      return false;
+    }
+    return true;
+  }
 }
