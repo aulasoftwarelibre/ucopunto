@@ -1,2 +1,2 @@
-export * from "./ride";
-export * from "./ride-id";
+export * from './ride';
+export * from './ride-id';

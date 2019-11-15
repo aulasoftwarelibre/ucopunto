@@ -1,1 +1,1 @@
-export * from "./check-driver-has-open-ride"
+export * from './check-driver-has-open-ride';
